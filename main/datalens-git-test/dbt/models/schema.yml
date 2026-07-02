@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: tpch_sf1000
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1000
+    tables:
+      - name: customer
+
+models:
+  - name: stg_customer
+    columns:
+      - name: customer_key
+      - name: customer_name
+      - name: customer_address
+      - name: customer_id
